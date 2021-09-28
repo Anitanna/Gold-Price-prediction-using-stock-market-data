@@ -18,22 +18,22 @@ Matplotlib is used for data visualization and NumPy for mathematical operations.
 
 #### Methods
 
-#### Web Scraping
+#### * Web Scraping
 Data is collected through Web Scraping using Python library’s Beautiful Soup and requests. Gold is transacted every 5 days from Monday to Friday.The timestamp of the dataset we collected through web scraping ranges from 2019-07-11 to 2021-07-17.For demand prediction, we needed at least two years of data, and web scraping could only yield up to 100 rows at a time. To solve this issue, we collected data as separate data frames from each site.Later, we concatenated each data frame into one.
 
-#### Data Stationarity
+#### * Data Stationarity
 
 Stationarity can be defined in precise mathematical terms, but for our purpose we mean a flat looking series, without trend, constant variance over time, a constant autocorrelation structure over time and no periodic fluctuations. To check the stationarity of the data, data along with the dates was plotted.the data is non-stationary, since the mean values is not constant along time.
 
-#### Model Training
+#### * Model Training
 
 To predict the Price of Gold for the next 4 Days two models were used.
 
-#####  Linear Regression Model
+#####  * Linear Regression Model
 
 A linear regression is a statistical technique used to predict future values based on past values. Our project uses a multiple regression model with input parameters as the moving average of the past 2 days and the past 5 days.The Linear Regression Model is trained using the training data , “fit” method is used to fit the dataset to a linear model and the price is predicted using the “Predict” Method .R square for regression,Root Mean Square Error value and Mean Absolute Percentage Error are also computed.
 
-#####  SARIMA Model
+#####  * SARIMA Model
 
 Seasonal Autoregressive Integrated Moving Average(SARIMA) is an extension of ARIMA that explicitly considers seasonal components of univariate time series data. The seasonal component of the series is further enhanced by adding additional hyperparameters to specify the autoregression (AR), the differentiating (I) and the moving average (MA).
 
@@ -42,14 +42,14 @@ Seasonal Autoregressive Integrated Moving Average(SARIMA) is an extension of ARI
 ### Result
 
 • The linear regression model has a Mean Absolute Percentage Error (MAPE) of 0.86 percent and the SARIMA model has a Mean Absolute Percentage Error (MAPE) of 2.14
+
 • Using MAPE as an evaluation metric when comparing the linear regression model and SARIMA model, the MAPE of SARIMA is larger than that of linear regression.
 
 ## Chapter 4
 
 ### Conclusion
 
-Since Mean Absolute Percentage Error (MAPE) of SARIMA is larger than that of linear regression. we conclude the best model for predicting gold
-prices is the Linear Regression model for our given data.We use only price data for this analysis. As part of a continuing effort, additional related features, such as interest rate, bond price or oil price, may also be introduced as part of a multivariate time series model.
+Since Mean Absolute Percentage Error (MAPE) of SARIMA is larger than that of linear regression. we conclude the best model for predicting gold prices is the Linear Regression model for our given data.We use only price data for this analysis. As part of a continuing effort, additional related features, such as interest rate, bond price or oil price, may also be introduced as part of a multivariate time series model.
 
 ## References
 
