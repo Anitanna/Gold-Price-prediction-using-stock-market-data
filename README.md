@@ -1,4 +1,4 @@
-# GOLD PRICE FORECASTING USING STOCK MARKET DATA
+#                                                                   GOLD PRICE FORECASTING USING STOCK MARKET DATA
 
 ## Chapter 1
 
@@ -28,10 +28,13 @@ Stationarity can be defined in precise mathematical terms, but for our purpose w
 #### Model Training
 
 To predict the Price of Gold for the next 4 Days two models were used.
-• Linear Regression Model
+
+#####  Linear Regression Model
+
 A linear regression is a statistical technique used to predict future values based on past values. Our project uses a multiple regression model with input parameters as the moving average of the past 2 days and the past 5 days.The Linear Regression Model is trained using the training data , “fit” method is used to fit the dataset to a linear model and the price is predicted using the “Predict” Method .R square for regression,Root Mean Square Error value and Mean Absolute Percentage Error are also computed.
 
-SARIMA Model
+#####  SARIMA Model
+
 Seasonal Autoregressive Integrated Moving Average(SARIMA) is an extension of ARIMA that explicitly considers seasonal components of univariate time series data. The seasonal component of the series is further enhanced by adding additional hyperparameters to specify the autoregression (AR), the differentiating (I) and the moving average (MA).
 
 ## Chapter 3 
@@ -54,5 +57,5 @@ prices is the Linear Regression model for our given data.We use only price data 
 2. privat Khaemasunun, P. (2007). Forecasting Thai Gold Prices, College of Innovation, Thammasat University, Thailand, vol. 23, no. 3, pp. 96–103.
 3. Forecasting Gold Price using Data Mining Techniques by Considering New Factors,A. Hatamlou and M. Deljavan,Department of Computer Science, Khoy Branch, Islamic Azad University, Khoy, Iran, 26 April 2018
 4. Stock Market Forecasting Using Time Series Analysis - KDnuggets
-5. https://www.adityabirlacapital.com/abc-of-money/factors-affecting-stockmarket
+5. https://www.adityabirlacapital.com/abc-of-money/factors-affecting-stockmarket
 
