@@ -11,12 +11,12 @@ The primary objective of this project is to analyze the historical prices of gol
 
 ### Libraries and Methods
 
-#### *Libraries
+#### **Libraries**
 
 Stock Market Forecasting is achieved by scraping data from the web using libraries such as Beautiful Soup which provides ways to navigate, search, and alter parse trees , requests with which We can fetch content from a URL using requests library. There are two main functions within Requests: making API requests and obtaining raw HTML content from websites, and Pandas is used for analysis of data.
 Matplotlib is used for data visualization and NumPy for mathematical operations. Our model uses the Sklearn library which is widely used for machine learning models. This library provides many efficient machine learning tools, including classification, regression, clustering and dimensionality reduction. Another library we used was Statsmodels. It is also a Python package that lets users explore data, estimate statistical models, and run statistical tests.
 
-#### *Methods
+#### **Methods**
 
 #### * Web Scraping
 Data is collected through Web Scraping using Python library’s Beautiful Soup and requests. Gold is transacted every 5 days from Monday to Friday.The timestamp of the dataset we collected through web scraping ranges from 2019-07-11 to 2021-07-17.For demand prediction, we needed at least two years of data, and web scraping could only yield up to 100 rows at a time. To solve this issue, we collected data as separate data frames from each site.Later, we concatenated each data frame into one.
